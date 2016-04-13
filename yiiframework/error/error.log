@@ -1,0 +1,24 @@
+[Sun Jan 17 11:24:26.696925 2016] [authz_core:error] [pid 5752:tid 1200] [client 127.0.0.1:12774] AH01630: client denied by server configuration: E:/yiistudy
+[Sun Jan 17 11:24:26.722945 2016] [authz_core:error] [pid 5752:tid 1200] [client 127.0.0.1:12774] AH01630: client denied by server configuration: E:/yiistudy, referer: http://www.yiistudy.com/
+[Sun Jan 17 11:27:48.814172 2016] [authz_core:error] [pid 5752:tid 1196] [client 127.0.0.1:13272] AH01630: client denied by server configuration: E:/yiistudy
+[Sun Jan 17 11:27:48.847196 2016] [authz_core:error] [pid 5752:tid 1196] [client 127.0.0.1:13272] AH01630: client denied by server configuration: E:/yiistudy, referer: http://www.yiistudy.com/
+[Sun Jan 17 11:46:49.615180 2016] [authz_core:error] [pid 9348:tid 1220] [client 127.0.0.1:16272] AH01630: client denied by server configuration: E:/yiistudy
+[Sun Jan 17 11:46:49.622185 2016] [authz_core:error] [pid 9348:tid 1220] [client 127.0.0.1:16272] AH01630: client denied by server configuration: E:/yiistudy, referer: http://www.yiistudy.com/
+[Sun Jan 17 11:46:52.554223 2016] [authz_core:error] [pid 9348:tid 1220] [client 127.0.0.1:16272] AH01630: client denied by server configuration: E:/yiistudy
+[Sun Jan 17 11:46:52.560228 2016] [authz_core:error] [pid 9348:tid 1220] [client 127.0.0.1:16272] AH01630: client denied by server configuration: E:/yiistudy, referer: http://www.yiistudy.com/
+[Sun Jan 17 11:47:06.198600 2016] [authz_core:error] [pid 9348:tid 1220] [client 127.0.0.1:16315] AH01630: client denied by server configuration: E:/yiistudy
+[Sun Jan 17 11:47:06.211608 2016] [authz_core:error] [pid 9348:tid 1220] [client 127.0.0.1:16315] AH01630: client denied by server configuration: E:/yiistudy, referer: http://www.yiistudy.com/index.php
+[Sun Jan 17 11:47:24.177399 2016] [authz_core:error] [pid 9348:tid 1220] [client 127.0.0.1:16316] AH01630: client denied by server configuration: E:/yiistudy
+[Sun Jan 17 11:47:24.185405 2016] [authz_core:error] [pid 9348:tid 1220] [client 127.0.0.1:16316] AH01630: client denied by server configuration: E:/yiistudy, referer: http://www.yiistudy.com/index.php
+[Sun Jan 17 11:47:34.091346 2016] [authz_core:error] [pid 9348:tid 1220] [client 127.0.0.1:16360] AH01630: client denied by server configuration: E:/yiistudy
+[Sun Jan 17 11:47:34.099343 2016] [authz_core:error] [pid 9348:tid 1220] [client 127.0.0.1:16360] AH01630: client denied by server configuration: E:/yiistudy, referer: http://www.yiistudy.com/index.php
+[Sun Jan 17 11:47:36.819459 2016] [authz_core:error] [pid 9348:tid 1220] [client 127.0.0.1:16360] AH01630: client denied by server configuration: E:/yiistudy
+[Sun Jan 17 11:47:36.827466 2016] [authz_core:error] [pid 9348:tid 1220] [client 127.0.0.1:16360] AH01630: client denied by server configuration: E:/yiistudy, referer: http://www.yiistudy.com/index.php
+[Sun Jan 17 11:48:15.393966 2016] [authz_core:error] [pid 10884:tid 1156] [client 127.0.0.1:16484] AH01630: client denied by server configuration: E:/yiistudy
+[Sun Jan 17 11:48:15.400971 2016] [authz_core:error] [pid 10884:tid 1156] [client 127.0.0.1:16484] AH01630: client denied by server configuration: E:/yiistudy, referer: http://www.yiistudy.com/index.php
+[Sun Jan 17 11:48:16.031372 2016] [authz_core:error] [pid 10884:tid 1156] [client 127.0.0.1:16484] AH01630: client denied by server configuration: E:/yiistudy
+[Sun Jan 17 11:48:16.037374 2016] [authz_core:error] [pid 10884:tid 1156] [client 127.0.0.1:16484] AH01630: client denied by server configuration: E:/yiistudy, referer: http://www.yiistudy.com/index.php
+[Tue Mar 22 11:39:48.644879 2016] [:error] [pid 3244:tid 1148] [client 127.0.0.1:29625] PHP Fatal error:  Uncaught Error: Using $this when not in object context in E:\\yiiframework\\advanced\\frontend\\views\\site\\index.php:5\nStack trace:\n#0 {main}\n  thrown in E:\\yiiframework\\advanced\\frontend\\views\\site\\index.php on line 5
+[Thu Mar 31 16:33:36.537060 2016] [:error] [pid 3244:tid 1136] [client 127.0.0.1:6858] PHP Fatal error:  Uncaught Error: Using $this when not in object context in E:\\yiiframework\\advanced\\frontend\\views\\site\\index.php:5\nStack trace:\n#0 {main}\n  thrown in E:\\yiiframework\\advanced\\frontend\\views\\site\\index.php on line 5
+[Thu Mar 31 16:43:10.372628 2016] [:error] [pid 3244:tid 1136] [client 127.0.0.1:8929] PHP Fatal error:  Uncaught Error: Using $this when not in object context in E:\\yiiframework\\advanced\\frontend\\views\\site\\index.php:5\nStack trace:\n#0 {main}\n  thrown in E:\\yiiframework\\advanced\\frontend\\views\\site\\index.php on line 5
+[Thu Mar 31 16:43:12.397655 2016] [:error] [pid 3244:tid 1136] [client 127.0.0.1:8929] PHP Fatal error:  Uncaught Error: Using $this when not in object context in E:\\yiiframework\\advanced\\frontend\\views\\site\\index.php:5\nStack trace:\n#0 {main}\n  thrown in E:\\yiiframework\\advanced\\frontend\\views\\site\\index.php on line 5

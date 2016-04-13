@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First React</title>
+    <script src="./react/build/react.js"></script>
+    <script src="./react/build/JSXTransformer.js"></script>
+</head>
+<body>
+<div id="ss"></div>
+<script type="text/jsx">
+    var FirstReact=React.createClass(
+            {
+                render:function () {
+                    return(
+                            <p>
+                                Fisrst,<input type="text" placeholder="Your name here"/>!
+                                It is{this.props.date.toTimeString()}
+                            </p>
+                    );
+                }
+            }
+    );
+
+ setInterval(function () {
+        React.render(
+                <FirstReact date={new Date()} />,
+                document.getElementById('ss')
+        );
+    },1000);
+
+
+</script>
+
+<div name="aa"></div>
+<p></p>
+<br/>
+<br/>
+<br/>
+<textarea name="bb"></textarea>
+
+111
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+    "name": "yiisoft/yiistudy",
+    "description": "codertouch.cn site",
+    "keywords": ["yii2", "codertouch.cn", "advanced", "phpstudy excersize"],
+    "homepage": "http://www.codertouch.cn",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "source": "https://github.com/codertouch/php-yii"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": ">=2.0.6",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "yiisoft/yii2-debug":"*",
+        "yiisoft/yii2-gii":"*",
+        "yiisoft/yii2-redis":"*",
+        "yiisoft/yii2-jui":"*",
+        "yiisoft/yii2-smarty":"*",
+        "react/react":"*"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}

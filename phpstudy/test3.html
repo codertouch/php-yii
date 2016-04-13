@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery1</title>
+    <script src="./jquery/jquery2.2.3.js"></script>
+    <style type="text/css">
+        #jqy1 {font-size: 10px;color: #1E9EDB}
+        #jqy2{
+            font-size: 15px;
+            color: #6daa05;
+        }
+        #jqy3{font-style: italic;}
+        #jqy4{align-content: space-around;}
+        #jqy5{text-align: right;}
+        #jqy6{margin-left: 10%;}
+        #jqy6{background-color: #fffc1c;}
+        .cl1{font-size: large;color: #0ec81b;}
+        .cl2{font-size: smaller;color: #0000cc;}
+    </style>
+</head>
+<body>
+<input type="button" value="clickme" class="jqi" name="na1"/>
+<input type="button" value="bulkme" class="jqi2" name="na2"/>
+<div id="jqy1">something1</div>
+<div id="jqy2">something2</div>
+<div id="jqy3" class="cl1">something3</div>
+<div id="jqy4">something4</div>
+<div id="jqy5">something5</div>
+<div id="jqy6">something6</div>
+<script type="text/javascript">
+    var count=0;
+   /* $(function () {
+        $('input:first').click(function () {
+            alert(count++);
+
+        });
+        $('#jqy1').css('color','red').css('font-size','100px');
+        $(document).ready(function () {
+            alert(count+2);
+        })
+    });*/
+ var divcss=$('div:eq(1)').css(['color','font-size','height']);
+    $.each(divcss,function (attr,value) {
+        console.log(attr+':'+value);
+        console.log(count++);
+        console.log(typeof $('div:eq(1)').css(['font-size','color']));
+        console.log(typeof parseInt($('div:eq(0)').css('color')));
+        console.log($('div:eq(4)').text());
+    });
+    $('div:eq(2)').wrap('<strong></strong>>');
+    $('input:first').click(function () {
+        $('div:eq(3)').toggleClass('cl2');
+        $('div').eq(5).toggleClass('cl1');
+        $('input[name=na2]').css('height','30px');
+
+    })
+    var time=jQuery.now();
+    var timet1=new Date();
+    var timestr=timet1.toLocaleDateString(time);
+    var timeh1=timet1.getHours(time);
+    var timem1=timet1.getMinutes(time);
+    console.log(timestr);
+    console.log(timeh1);
+    console.log(time);
+var role;
+    var choose=(timem1=='30')&&(timeh1=='20')?true:false;
+    console.log(choose+"<br/>"+timem1+"<br/>"+timeh1);
+function seref(choose) {
+    if(!choose){
+        document.getElementById('counting').value=count;
+        count++;
+        $('input[name=counttime]').value=timestr;
+     role=setTimeout('seref()',1000);
+
+        }
+    else {
+        self.location.href='test.html';
+
+
+    }
+}
+    function stopref() {
+        clearTimeout(role);
+    }
+    console.log(timet1.toJSON(time));
+    console.log(timet1.toTimeString(time));
+    console.log(timet1.toLocaleString(time));
+</script>
+<input type="button" value="点击跳转" onclick="setTimeout('self.location.href=\'test.html\'',1000)">
+<input type="button" value="点击跳转2" onclick="seref(choose)">
+<input type="button" value="点击停止" onclick="stopref()">
+距离页面跳转的时间还有<input type="text" id="counting">秒...
+<input type="text" name="counttime">
+</body>
+</html>

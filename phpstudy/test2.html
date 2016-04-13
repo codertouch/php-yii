@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>react2.0</title>
+    <script src="./react/build/react.js"></script>
+    <script src="./react/build/JSXTransformer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+<div id="ss"></div>
+<script type="text/jsx">
+var LikeButton =React.createClass({
+    getInitialState:function () {
+        return {liked:false};
+    },
+    handleClick:function (event) {
+        this.setState({liked:!this.state.liked});
+    },
+    render:function () {
+        var text=this.state.liked ? 'like':'haven\'t liked';
+        return (
+                <p onclick={this.handleClick()}>
+                    You {text}  this.Click to toggle.
+                </p>
+        );
+    }
+});
+    React.render(
+            <LikeButton />,
+            document.getElementById('ss')
+    );
+</script>
+</body>
+</html>
